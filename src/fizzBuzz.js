@@ -29,4 +29,6 @@ FizzBuzz.prototype.says = function(number){
   if ( this.isDivisibleByThree(number)) {
     return "Fizz";
   }
+
+  return number; 
 };
