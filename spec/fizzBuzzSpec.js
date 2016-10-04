@@ -14,6 +14,7 @@ describe("FizzBuzz", function(){
     it("divisible by three", function(){
       expect(fizzBuzz.isDivisibleByThree(1)).toBe(false);
     });
+  });
 
   describe("know when the number is", function(){
     it("divisble by five", function(){
@@ -56,19 +57,6 @@ describe("FizzBuzz", function(){
         expect(fizzBuzz.says(15)).toEqual("FizzBuzz");
       });
   });
-
-
-
-
-});
-
-
-
-
-
-
-
-
 
 
 
