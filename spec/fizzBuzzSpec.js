@@ -1,62 +1,69 @@
-describe("Fizzbuzz", function(){
-var fizzBuzz;
 
+describe("FizzBuzz", function(){
+  var fizzbuzz;
 
   beforeEach(function(){
-    fizzBuzz = new FizzBuzz();
+    fizzbuzz = new FizzBuzz();
   });
 
-  describe("know when the number", function(){
+  describe("it knows when the number", function(){
     it("is divisible by three", function(){
-      expect(fizzBuzz.isDivisibleByThree(3)).toBe(true);
+      expect(fizzbuzz.isDivisibleByThree(3)).toBe(true)
     });
-  });
 
-  describe ("know when the number", function(){
+  });
+  describe("it knows when the number", function(){
     it("is not divisible by three", function(){
-      expect(fizzBuzz.isDivisibleByThree(1)).toBe(false);
+      expect(fizzbuzz.isDivisibleByThree(1)).toBe(false)
     });
+
   });
 
-  describe("know when the number", function(){
-    it("it is divisible by five", function(){
-      expect(fizzBuzz.isDivisibleByFive(5)).toBe(true);
+  describe("it knows when the number", function(){
+    it("is divisible by five", function(){
+      expect(fizzbuzz.isDivisibleByFive(5)).toBe(true)
     });
-  });
 
-  describe("know when the number", function(){
-    it("it is not divisible by five", function(){
-      expect(fizzBuzz.isDivisibleByFive(2)).toBe(false);
+  });
+  describe("it knows when the number", function(){
+    it("is not divisible by five", function(){
+      expect(fizzbuzz.isDivisibleByFive(1)).toBe(false)
     });
-  });
 
-  describe("know when the number", function(){
-    it("it is divisible by 15", function(){
-      expect(fizzBuzz.isDivisibleByFifteen(15)).toBe(true);
+  });
+  describe("it knows when the number", function(){
+    it("is divisible by fifteen ", function(){
+      expect(fizzbuzz.isDivisibleByFifteen(15)).toBe(true)
     });
-  });
 
-  describe("know when the number", function(){
-    it("it is not divisible by 15", function(){
-      expect(fizzBuzz.isDivisibleByFifteen(3)).toBe(false);
+  });
+  describe("it knows when the number", function(){
+    it("is not divisible by fifteen", function(){
+      expect(fizzbuzz.isDivisibleByFifteen(1)).toBe(false)
     });
   });
 
   describe("says", function(){
-    it("fizz when is divisibe by 3", function(){
-      expect(fizzBuzz.says(3)).toEqual("fizz");
+    it("fizzbuzz when the number is divisible by 15", function(){
+      expect(fizzbuzz.says(15)).toEqual('fizzbuzz');
     });
   });
+
   describe("says", function(){
-    it("buzz when is divisibe by 5", function(){
-      expect(fizzBuzz.says(5)).toEqual("buzz");
+    it("fizz when the number is divisible by 3", function(){
+      expect(fizzbuzz.says(3)).toEqual('fizz');
     });
   });
+
   describe("says", function(){
-      it("fizzbuzz when is divisibe by 15", function(){
-      expect(fizzBuzz.says(15)).toEqual("fizzbuzz");
+    it("buzz when the number is divisible by 5", function(){
+      expect(fizzbuzz.says(5)).toEqual('buzz');
     });
   });
+
+
+
+
 
 
 
